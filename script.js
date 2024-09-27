@@ -7,17 +7,22 @@ Mndata.then((array)=>{
 	const store=[];
 	for(let x of array){
 		if(x%2!=0){
-			array=store.push(x);
+			store=store.push(x);
+	
 		}
-	}
-
-	setTimeout(()=>{
-		return array;
+		setTimeout(()=>{
+		
 	},1000);
+		
+	}
+	
+	return store;
 });
 .then((array)=>{
-	array.reduce((accumulator,currentvalue)=>{
-		array=currentvalue*2;
+	const mul=[];
+	for(let x of array){
+		mul=mul.push(array[x]*2);
+	}
 	})
 	setTimeout(()=>{
 		return array
