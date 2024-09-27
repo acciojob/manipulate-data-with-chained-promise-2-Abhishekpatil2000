@@ -11,7 +11,7 @@ Mndata.then((array)=>{
 		}
 	}
 	setTimeout(()=>{
-		
+		resolve(store);
 	},1000);
 	
 	return store;
@@ -23,6 +23,7 @@ Mndata.then((array)=>{
 	
 	}
 	setTimeout(()=>{
+		resolve(mul);
 	},2000);
 return mul;
 	})
