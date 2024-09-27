@@ -25,7 +25,7 @@ Mndata.then((array)=>{
 	}
 	setTimeout(()=>{
 		resolve(mul);
-	},2000);
+	},1000);
 	});
 	
 	})
