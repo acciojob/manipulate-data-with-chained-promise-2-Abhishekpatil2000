@@ -12,7 +12,7 @@ Mndata.then((array)=>{
 
 	setTimeout(()=>{
 		return array;
-	},3000);
+	},1000);
 });
 .then((array)=>{
 	array.reduce((accumulator,currentvalue)=>{
@@ -20,5 +20,5 @@ Mndata.then((array)=>{
 	})
 	setTimeout(()=>{
 		return array
-	},3000);
+	},2000);
 })
