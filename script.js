@@ -3,7 +3,8 @@ let Mndata= new Promise(function(resolve,reject) {
 	resolve([1,2,3,4]);
 });
 Mndata.then((array)=>{
-	const store=[];
+	return new Promise((resolve,reject)=>{
+		const store=[];
 	for(let x of array){
 		if(x%2!=0){
 			store.push(x);
@@ -13,11 +14,11 @@ Mndata.then((array)=>{
 	setTimeout(()=>{
 		resolve(store);
 	},1000);
-	
-	return store;
+	});
 })
 .then((array)=>{
-	const mul=[];
+	return new Promise((resolve,reject)=>{
+		const mul=[];
 	for(let x of array){
 		mul.push(x*2);
 	
@@ -25,10 +26,10 @@ Mndata.then((array)=>{
 	setTimeout(()=>{
 		resolve(mul);
 	},2000);
-return mul;
+	});
+	
 	})
 
-})
 .then((array)=>{
 	document.getElementById('output').innerText= array.join(',');
-})
+});
