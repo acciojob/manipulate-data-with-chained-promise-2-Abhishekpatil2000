@@ -7,7 +7,7 @@ Mndata.then((array)=>{
 	const store=[];
 	for(let x of array){
 		if(x%2!=0){
-			store=store.push(x);
+			store.push(x);
 	
 		}
 		setTimeout(()=>{
@@ -21,11 +21,12 @@ Mndata.then((array)=>{
 .then((array)=>{
 	const mul=[];
 	for(let x of array){
-		mul=mul.push(array[x]*2);
+		mul.push(array[x]*2);
+	
+	}
 	setTimeout(()=>{
 	},2000);
-	}
-			return mul;
+return mul;
 	})
 	
 
