@@ -1,4 +1,5 @@
 //your JS code here. If required.
+document.getElementById('output')
 let Mndata= new Promise(function(resolve,reject) {
 	resolve([1,2,3,4]);
 });
