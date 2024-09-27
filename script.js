@@ -6,7 +6,7 @@ Mndata.then((array)=>{
 	return new Promise((resolve,reject)=>{
 		const store=[];
 	for(let x of array){
-		if(x%2!=0){
+		if(x%2==0){
 			store.push(x);
 	
 		}
