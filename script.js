@@ -25,9 +25,8 @@ Mndata.then((array)=>{
 	setTimeout(()=>{
 	},2000);
 	}
-	
+			return mul;
 	})
 	
-		return mul;
 
 })
