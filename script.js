@@ -22,9 +22,12 @@ Mndata.then((array)=>{
 	const mul=[];
 	for(let x of array){
 		mul=mul.push(array[x]*2);
-	}
-	})
 	setTimeout(()=>{
-		return array
 	},2000);
+	}
+	
+	})
+	
+		return mul;
+
 })
